@@ -11,3 +11,4 @@ jobs:
         run: |
           echo "${{ vars.ENV }}"
           echo "${{ toJson(env) }}"
+          echo "${{ toJson(github) }}"

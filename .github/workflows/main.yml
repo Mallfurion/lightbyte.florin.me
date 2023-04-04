@@ -10,5 +10,6 @@ jobs:
       - name: 'Checkout GitHub Action'
         run: |
           echo "${{ vars.ENV }}"
+          echo "${{ toJson(vars) }}"
           echo "${{ toJson(env) }}"
           echo "${{ toJson(github) }}"

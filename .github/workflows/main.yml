@@ -8,4 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout GitHub Action'
-        run: echo ${{ vars.ENV }}
+        run: |
+          echo "${{ vars.ENV }}"
+          echo "${{ env }}"
+          echo "${{ context }}"

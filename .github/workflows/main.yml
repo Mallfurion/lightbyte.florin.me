@@ -11,4 +11,3 @@ jobs:
         run: |
           echo "${{ vars.ENV }}"
           echo "${{ env }}"
-          echo "${{ context }}"

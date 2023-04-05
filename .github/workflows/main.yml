@@ -14,4 +14,4 @@ jobs:
       name: ${{ github.event.inputs.environment }}
     steps:
       - name: 'Echo Vars'
-        run: echo ${{ toJson(vars) }}
+        run: "echo ${{ toJson(vars) }}"
